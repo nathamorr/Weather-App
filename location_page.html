@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Weather App</title>    
+
+<body>
+    <input type="button" value="Switch to °F" style="float: right;">
+    <input type="button" value="Switch to °C" style="float: right;">
+
+<div id = "logo"> 
+    <img src="soleil.png" ALIGN = "left" width="7%" height="7%">
+    <br>
+    <h1>Welcome to the weather App</h1>
+    <br><br><br>
+</div>
+
+<div id = "input">
+    <form action="/action_page.php">
+        <label for="location">Enter a location :</label>
+        <input type="text" id="location" name="location">
+        <button type="button">Search</button>
+    </form>
+</div>
+
+
+
+<br><br><br>
+
+<h2>Country general informations</h2>
+
+<input type="button" value="Switch to °C">
+<input type="button" value="Switch to °F">
+
+<br><br>
+
+<div id = country_list>
+    <label for="country">Choose a country :</label>
+
+    <select name="country" id="country">
+    <option value="Estonia">Estonia</option>
+    <option value="France">France</option>
+
+    </select>
+</div>
+
+<br>
+<div id = "table">
+    <table style="width:100%">
+        <tr>
+        <th>City</th>
+        <th>Temperature</th>
+        <th>Weather condition</th>
+        <th>Min</th>
+        <th>Max</th>
+        </tr>
+        <tr>
+        <td>Paris</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Marseille</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Lyon</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Toulouse</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Bordeaux</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Lanton</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+    </table>
+</div>
+
+<br><br><br>
+
+<div id = "marquee">
+    <marquee width="80%" direction="right" height="70px">
+        <img src="nuage.png" ALIGN = "left" width="10%" height="10%">
+    </marquee>
+</div>
+
+<div id = "footer">
+    <hr>
+    <footer>
+        <p>Author: Nathan Amorrich</p>
+        <p><a href="mailto:namorric@tlu.ee">namorric@tlu.ee</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
