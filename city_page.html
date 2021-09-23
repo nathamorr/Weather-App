@@ -1,100 +1,85 @@
 <!DOCTYPE html>
 <html>
-<title>Weather App</title>    
-<link rel="shortcut icon" type="image/x-icon" href="icone.ico" />
+<title>*search_city_name* Weather</title> 
+<link rel="shortcut icon" type="image/x-icon" href="icone.ico" />   
+
 <body>
-
-<div id = units_list     ALIGN = "right">
-
-    <select name="units_list" id="units_list">
-    <option value="°C">°C</option>
-    <option value="°F">°F</option>
-
-    </select>
-</div>
 
 <div id = "logo"> 
     <img src="soleil.png" ALIGN = "left" width="7%" height="7%">
-    <br>
-    <h1> Welcome to the weather App</h1>
-    <br><br><br>
+
+    <div id = units_list     ALIGN = "right">
+
+        <select name="units_list" id="units_list">
+        <option value="°C">°C</option>
+        <option value="°F">°F</option>
+    
+        </select>
+    </div>
+
+    <h1>*search_city_name*</h1>
+
 </div>
-
-<div id = "input">
-    <center>
-    <form action="/action_page.php">
-        <label for="location">Enter a location :</label>
-        <input type="text" id="location" name="location">
-        <button type="button">Search</button>
-    </form>
-    </center>
-</div>
-
-<br><br><br>
-
-<h2> Country prevision overview</h2>
-
-
 
 <br><br>
+<input type="button" value="Daily prevision">
+<input type="button" value="7-days prevision">
 
-<div id = country_list>
-    <label for="country">Choose a country :</label>
-
-    <select name="country" id="country">
-    <option value="France">France</option>
-    <option value="Estonia">Estonia</option>
-
-    </select>
-</div>
+<br><br>
 
 <br>
 <div id = "table">
     <table style="width:100%">
         <tr>
-        <th>City</th>
-        <th>Temperature</th>
-        <th>Weather condition</th>
-        <th>Min</th>
-        <th>Max</th>
+        <th>Temperature Min</th>
+        <th>Temperature Max</th>        
+        <th>Wind speed</th>
+        <th>Cloudiness</th>
         </tr>
         <tr>
-        <td>Paris</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Marseille</td>
+        <td>Monday</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         </tr>
         <tr>
-        <td>Lyon</td>
+        <td>Tuesday</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         </tr>
         <tr>
-        <td>Toulouse</td>
+        <td>Wednesday</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         </tr>
         <tr>
-        <td>Bordeaux</td>
+        <td>Thursday</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
         </tr>
         <tr>
-        <td>Lanton</td>
+        <td>Friday</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Saturday</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <td>?</td>
+        <tr>
+        </tr>
+        <td>Sunday</td>
         <td>?</td>
         <td>?</td>
         <td>?</td>
@@ -106,7 +91,6 @@
 <br><br><br>
 
 <h2> Weather Map</h2>
-
 
 <div id = "marquee">
     <marquee width="100%" direction="right" height="70px">
