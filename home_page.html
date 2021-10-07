@@ -1,127 +1,57 @@
 <!DOCTYPE html>
 <html>
-<title>Weather App</title>    
-<link rel="shortcut icon" type="image/x-icon" href="pictures/icone.ico" />
-<body>
 
-<div id = units_list     ALIGN = "right">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <select name="units_list" id="units_list">
-    <option value="°C">°C</option>
-    <option value="°F">°F</option>
+    <body>
 
-    </select>
-</div>
+        <!--Grid--> 
+        <div class="wrapper_1">
 
-<div id = "logo"> 
-    <img src="pictures/soleil.png" ALIGN = "left" width="7%" height="7%">
-    <br>
-    <h1> Welcome to the weather App</h1>
-    <br><br><br>
-</div>
+            <div class="title"> 
+                Welcome to the Weather App 
+        
+                <select name="units_list" id="units_list">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
 
-<div id = "input">
-    <center>
-    <form action="/action_page.php">
-        <label for="location">Enter a location :</label>
-        <input type="text" id="location" name="location">
-        <button type="button">Search</button>
-    </form>
-    </center>
-</div>
+            </div>
+            
+            <div class="researchBar">
+                <input type = "text" placeholder="Enter a location" class="InputValue" style="height:25px; width:200px"> 
+                <input type = "button" placeholder="test" class="Submit" value="Submit" style="height:25px; width:50px" >
+ 
+            </div>
+     
+            <div class="Tallinn">Tallinn</div>
+                <h1 class="name"></h1>
+                <p class = "desc"></p>
+                <p temp = "temp"></p>
+        
+            <div class="Paris">Paris</div>
+                <h1 class="name"></h1>
+                <p class = "desc"></p>
+                <p temp = "temp"></p>
 
-<br><br><br>
+            <div class="Berlin">Berlin</div>
+                <h1 class="name"></h1>
+                <p class = "desc"></p>
+                <p temp = "temp"></p>
+        
+            <div class="Widget_1">Widget 1</div>
 
-<h2> Country prevision overview</h2>
+            <div class="footer">        
+                <p>Author: Nathan Amorrich</p>
+                <p><a href="mailto:namorric@tlu.ee">namorric@tlu.ee</a></p>
+            </div>
 
+        </div>
 
+    </body>
 
-<br><br>
+    <script src = "script.js"></script>
 
-<div id = country_list>
-    <label for="country">Choose a country :</label>
-
-    <select name="country" id="country">
-    <option value="France">France</option>
-    <option value="Estonia">Estonia</option>
-
-    </select>
-</div>
-
-<br>
-<div id = "table">
-    <table style="width:100%">
-        <tr>
-        <th>City</th>
-        <th>Temperature</th>
-        <th>Weather condition</th>
-        <th>Min</th>
-        <th>Max</th>
-        </tr>
-        <tr>
-        <td>Paris</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Marseille</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Lyon</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Toulouse</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Bordeaux</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Lanton</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-    </table>
-</div>
-
-<br><br><br>
-
-<h2> Weather Map</h2>
-
-
-<div id = "marquee">
-    <marquee width="100%" direction="right" height="70px">
-        <img src="pictures/nuage.png" ALIGN = "left" width="10%" height="10%">
-    </marquee>
-</div>
-
-<div id = "footer">
-    <hr>
-    <footer>
-        <p>Author: Nathan Amorrich</p>
-        <p><a href="mailto:namorric@tlu.ee">namorric@tlu.ee</a></p>
-    </footer>
-
-</div>
-
-</body>
 </html>
