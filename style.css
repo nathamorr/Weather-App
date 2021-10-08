@@ -130,21 +130,6 @@ button:hover{
     grid-row-end: 2;
 }
 
-img.icon_Tallinn{
-}
-
-p.desc_Tallinn{
-}
-
-p.temp_Tallinn{    
-}
-
-p.humidity_Tallinn{
-}
-
-p.wind_Tallinn{
-}
-
 .name_Tallinn{
     text-align: center;
         font-family: 'Roboto', sans-serif;
@@ -198,22 +183,6 @@ p.wind_Tallinn{
     grid-row-end: 3;
 }
 
-img.icon_Paris{
-
-}
-
-p.desc_Paris{
-}
-
-p.temp_Paris{    
-}
-
-p.humidity_Paris{
-}
-
-p.wind_Paris{
-}
-
 .name_Paris{
     text-align: center;
         font-family: 'Roboto', sans-serif;
@@ -265,21 +234,6 @@ p.wind_Paris{
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-}
-
-img.icon_Berlin{  
-}
-
-p.desc_Berlin{
-}
-
-p.temp_Berlin{    
-}
-
-p.humidity_Berlin{
-}
-
-p.wind_Berlin{
 }
 
 .name_Berlin{
@@ -341,7 +295,7 @@ p.wind_Berlin{
 
 .wrapper_2 {
     display: inline-grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px 300px;
    
     justify-items: center;

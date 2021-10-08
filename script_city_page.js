@@ -1,6 +1,5 @@
 var city_name = localStorage.getItem('city_name');
 localStorage.removeItem('city_name');
-alert(city_name)
 
 document.querySelector(".title").innerHTML = "Weather in "+city_name;
 document.querySelector(".titleBlock").innerHTML = "Weather in "+city_name;
