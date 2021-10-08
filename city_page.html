@@ -1,111 +1,34 @@
 <!DOCTYPE html>
 <html>
-<title>*search_city_name* Weather</title> 
-<link rel="shortcut icon" type="image/x-icon" href="pictures/icone.ico" />   
+<title class = "title">Weather App</title>
+<link rel="shortcut icon" type="image/x-icon" href="pictures/icone.ico" />
 
-<body>
+    <head>
+        <link rel="stylesheet" href="style_city_page.css">
+    </head>
 
-<div id = "logo"> 
-    <img src="pictures/soleil.png" ALIGN = "left" width="7%" height="7%">
+    <body>
 
-    <div id = units_list     ALIGN = "right">
+        <!--Grid--> 
+        <div class="wrapper_1">
 
-        <select name="units_list" id="units_list">
-        <option value="°C">°C</option>
-        <option value="°F">°F</option>
-    
-        </select>
-    </div>
+            <div class="titleBlock"> 
+                Weather in ?
+            </div>
+            
+            <div class="city_info">
+                <h1 class="name">?</h1>
+                <img src="" alt="" class="icon" />
+                <p class = "desc">?</p>
+                <p class = "temp">?</p>
+                <p class = "humidity">?</p>
+                <p class = "wind">?</p>
+            </div>
 
-    <h1>*search_city_name*</h1>
+        </div>
+     
+    </body>
 
-</div>
+    <script src = "script_city_page.js"></script>
 
-<br><br>
-<input type="button" value="Daily prevision">
-<input type="button" value="7-days prevision">
-
-<br><br>
-
-<br>
-<div id = "table">
-    <table style="width:100%">
-        <tr>
-        <th>Temperature Min</th>
-        <th>Temperature Max</th>        
-        <th>Wind speed</th>
-        <th>Cloudiness</th>
-        </tr>
-        <tr>
-        <td>Monday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Tuesday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Wednesday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Thursday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Friday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-        <tr>
-        <td>Saturday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <tr>
-        </tr>
-        <td>Sunday</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        <td>?</td>
-        </tr>
-    </table>
-</div>
-
-<br><br><br>
-
-<h2> Weather Map</h2>
-
-<div id = "marquee">
-    <marquee width="100%" direction="right" height="70px">
-        <img src="pictures/nuage.png" ALIGN = "left" width="10%" height="10%">
-    </marquee>
-</div>
-
-<div id = "footer">
-    <hr>
-    <footer>
-        <p>Author: Nathan Amorrich</p>
-        <p><a href="mailto:namorric@tlu.ee">namorric@tlu.ee</a></p>
-    </footer>
-
-</div>
-
-</body>
 </html>

@@ -1,0 +1,84 @@
+/* Grid */
+body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titleBlock {
+    border-style:none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 1000px;
+
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+
+    height: 100px;
+    line-height: 100px;
+
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-start: 2;
+}
+
+
+.city_info{  
+    
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 20px;
+    height: 230px;
+    line-height: 20px;
+    width: 180px;
+    padding: 10px;
+
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px ;
+    
+    text-align: Left;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-start: 3;
+    
+}
+
+.name{
+    text-align: center;
+        font-family: 'Roboto', sans-serif;
+}
+
+.footer {  
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 15px;
+    padding: 10px;
+
+    color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-start: 4;   
+}
+
+.wrapper_1 {
+    display: inline-grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 5px 200px;
+    justify-items: center;
+    align-items: center;
+}

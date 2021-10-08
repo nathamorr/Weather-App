@@ -1,6 +1,10 @@
 /* Grid */
 body{
-    background: linear-gradient(rgba(0, 0, 255, 0.597), white);
+    /*background: linear-gradient(rgba(0, 0, 255, 0.597), white);*/
+    background-image: url(pictures/back4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 input[type=text] {
@@ -11,22 +15,22 @@ input[type=text] {
     width: 100%;
   }
 
-.title {
-    border-style:solid;
+.titleBlock {
+    border-style:none;
     border-radius: 20px;
     padding: 10px;
     width: 1000px;
 
-    background-color: rgba(47, 100, 213, 0.542);
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
 
     height: 100px;
     line-height: 100px;
 
     text-align: center;
     font-size: 50px;
-    font-style: italic;
     color: rgb(255, 255, 255);
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto';
     
     grid-column-start: 1;
     grid-column-end: 4;
@@ -34,101 +38,284 @@ input[type=text] {
     grid-row-start: 2;
 }
 
-.researchBar {  
-    border-style:solid;
+.researchBlock {  
+    
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    
+    border-style: none;
     border-radius: 20px;
     border-width: 4px;
-
-    background-color: rgba(47, 100, 213, 0.802);
 
     height: 75px;
     line-height: 75px;
     width: 350px;
 
-    font-size: 30px;
-    font-style: italic;
-    color: rgb(255, 255, 255);
-    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-
+    
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-start: 3;
 }
 
-.Submit{
-    border-radius: 20px;
-    color: rgb(19, 14, 130);
-    background-color: rgb(255, 255, 255);
-    font-size: 12px;
-    font-family: 'Roboto Condensed', sans-serif;
+.InputValue{
+    
+    border: none;
+    border-radius: 15px;
+    
+    height: 500px;
+    
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color : gray;
 }
 
-.Tallinn {  
-
-    color: rgb(255, 255, 255);
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 4px;
+button{
+    appearance: button;
+    border : none;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
     
+    background-color: rgba(255, 255, 255, 1)
+}
+
+button:hover{
+    background: gray;
+}
+
+.Tallinn_pic{  
+
+    border-style: none;
+    
+    border-radius: 15px;
+    border-width: 4px;
+
     background-image: url("pictures/Tallinn.jpg"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+        
+    height: 250px;
+    line-height: 100px;
+    width: 200px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Tallinn_info{  
+
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 20px;
+    height: 230px;
+    line-height: 20px;
+    width: 180px;
+    padding: 10px;
+
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px ;
+    
+    text-align: Left;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+img.icon_Tallinn{
+}
+
+p.desc_Tallinn{
+}
+
+p.temp_Tallinn{    
+}
+
+p.humidity_Tallinn{
+}
+
+p.wind_Tallinn{
+}
+
+.name_Tallinn{
+    text-align: center;
+        font-family: 'Roboto', sans-serif;
+}
+
+.Paris_pic { 
+
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 15px;
+    border-width: 4px;
     
     height: 250px;
     line-height: 100px;
     width: 200px;
 
-    background-color: rgba(47, 100, 213, 0.802);
+    background-image: url(pictures/Paris.jpg);
 
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px ;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-.Paris {  
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 4px;
-
-    background-image: url("pictures/Paris.jpg"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
-    height: 250px;
-    line-height: 100px;
-    width: 200px;
 
-    background-color: rgba(47, 100, 213, 0.802);
+.Paris_info{  
+
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 18px;
+    
+    height: 230px;
+    line-height: 20px;
+    width: 180px;
+    padding: 10px;
+
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px ;
+    text-align: Left;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+img.icon_Paris{
+
+}
+
+p.desc_Paris{
+}
+
+p.temp_Paris{    
+}
+
+p.humidity_Paris{
+}
+
+p.wind_Paris{
+}
+
+.name_Paris{
+    text-align: center;
+        font-family: 'Roboto', sans-serif;
+}
+
+.Berlin_pic {  
+
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 20px;
+    
+    height: 230px;
+    line-height: 20px;
+    width: 180px;
+    padding: 10px;
+
+    background-image: url("pictures/Berlin.jpg"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Berlin_info{  
+
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 15px;
+    padding: 10px;
+    
+    height: 230px;
+    line-height: 20px;
+    width: 180px;
+    
+    
+    color: rgba(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px ;
+  
+    text-align: Left;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+img.icon_Berlin{  
+}
+
+p.desc_Berlin{
+}
+
+p.temp_Berlin{    
+}
+
+p.humidity_Berlin{
+}
+
+p.wind_Berlin{
+}
+
+.name_Berlin{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer {  
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 15px;
+    padding: 10px;
 
     color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
     text-align: center;
 
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-start: 4;
+    grid-row-start: 4;   
 }
 
-.Berlin {  
-    border-style: solid;
+.Arcachon_pic {
+    
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
     border-radius: 20px;
-    border-width: 4px;
+    
+    height: 100px;
+    width: 180px;
+    padding: 10px;
 
-    height: 250px;
-    line-height: 100px;
-    width: 200px;
-
-    background-image: url("pictures/Berlin.jpg"); 
+    background-image: url("pictures/Arcachon.jpg"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,73 +327,24 @@ input[type=text] {
 
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
     grid-row-start: 4;
-}
-
-.Widget_1 {  
-        border-style: solid;
-        border-radius: 20px;
-        border-width: 4px;
-        
-        margin-top: 100px;
-        height: 200px;
-        line-height: 100px;
-        width: 200px;
-            
-        background-color: rgba(47, 100, 213, 0.802);
-    
-        color: rgb(255, 255, 255);
-        text-align: center;
-        
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-start: 5;   
-}
-
-.footer {  
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 4px;
-
-    padding: 10px;
-
-    background-color: rgba(47, 100, 213, 0.802);
-
-    color: rgb(255, 255, 255);
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-
-    margin-top: 100px;
-
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-start: 6;   
+    grid-row-end: 5; 
 }
 
 .wrapper_1 {
     display: inline-grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 3px 150px 250px 250px 250px;
-    row-gap: 3px;
+    grid-template-rows: 5px 200px;
     justify-items: center;
     align-items: center;
 }
 
-input[type="text"]{
-    height: 25px;
-    width: 150px;
-    background: rgb(255, 255, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 10px;
+.wrapper_2 {
+    display: inline-grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+   
+    justify-items: center;
+    align-items: center;
 }
 
-input[type="submit"]{
-    height: 25px;
-    width: 25px;
-    background: rgb(85, 64, 182);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 10px;
-}
